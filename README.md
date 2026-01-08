@@ -25,7 +25,7 @@ Il permet de lister des produits, afficher les détails dans un modal et gérer 
 
 ## Structure du projet
 
-
+```text
 my-ecommerce/
 ├─ index.html                  # liste produits + modal
 ├─ cart.html                   # page panier
@@ -71,7 +71,7 @@ my-ecommerce/
 │
 ├─ README.md
 └─ .gitignore
-
+```
 ---
 
 ## ⚡ Pré-requis
@@ -96,27 +96,28 @@ cd my-ecommerce
 
 2. Installer les dépendances
 
+```bash
 npm install
-
+```
 3. Lancer le serveur local (développement)
-
+```bash
 npm run dev
-
+```
 Ouvrir l’URL affichée par Vite (ex : http://localhost:5173)
 Modifier le code → Vite recharge automatiquement les fichiers
 
 4. Build pour la production
-
+```bash
 npm run build
-
+```
 Les fichiers optimisés sont générés dans le dossier dist/
 
 (Vous pouvez héberger ces fichiers sur Netlify, GitHub Pages ou tout autre serveur)
 
 5. Aperçu du build
-
+```bash
 npm run preview
-
+```
 
 License : MIT
 
