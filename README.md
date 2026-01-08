@@ -103,23 +103,22 @@ npm install
 ```bash
 npm run dev
 ```
-Ouvrir l’URL affichée par Vite (ex : http://localhost:5173)
-Modifier le code → Vite recharge automatiquement les fichiers
+> Ouvrir l’URL affichée par Vite (ex : http://localhost:5173)
+> Modifier le code → Vite recharge automatiquement les fichiers
 
 4. Build pour la production
 ```bash
 npm run build
 ```
-Les fichiers optimisés sont générés dans le dossier dist/
-
-(Vous pouvez héberger ces fichiers sur Netlify, GitHub Pages ou tout autre serveur)
+> Les fichiers optimisés sont générés dans le dossier dist/
+> (Vous pouvez héberger ces fichiers sur Netlify, GitHub Pages ou tout autre serveur)
 
 5. Aperçu du build
 ```bash
 npm run preview
 ```
 
-License : MIT
+> License : MIT
 
 ---
 
