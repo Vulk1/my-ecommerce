@@ -1,0 +1,27 @@
+{
+  "name": "my-ecommerce",
+  "version": "1.0.0",
+  "description": "Mini site e-commerce réalisé en **HTML, CSS et JavaScript vanilla**.\r Les produits sont récupérés depuis une API publique et le panier est\r persisté via `localStorage`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vulk1/my-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "Le Guennec Yaakoub",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vulk1/my-ecommerce/issues"
+  },
+  "homepage": "https://github.com/Vulk1/my-ecommerce#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
