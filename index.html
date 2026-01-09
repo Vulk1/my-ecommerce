@@ -2,11 +2,59 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>My E-commerce</title>
-  <script src="js/main.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelBazaar</title>
+  <meta name="description" content="PixelBazaar - Mini site e-commerce avec produits, panier et modals, design moderne et responsive.">
+  <link rel="icon" type="image/x-icon" href="assets/images/flavicon/favicon-32x32.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/flavicon/flavicon-180x180.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" type="module" defer></script>
+  <script src="js/pages/index.page.js" type="module" defer></script>
 </head>
 <body>
-  <h1>Bienvenue sur mon site e-commerce</h1>
+  <nav>
+    <img src="assets/images/logo.png" class="logo">
+    <div>
+      <a href="">Home</i>
+      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </nav>
+  <header>
+    <div class="filters">
+      <div class="filter-container">
+        <button class="filter-btn"><i class="fa-solid fa-angle-down down"></i> <i class="fa-solid fa-angle-up up hidden"></i>Trier</button>
+        <div class="filter-options hidden">
+          <button data-value="price-asc" data-type="sort" class="filterOption">Prix croissant</button>
+          <button data-value="price-desc" data-type="sort" class="filterOption">Prix décroissant</button>
+        </div>
+      </div>
+      <div class="filter-container">
+        <button class="filter-btn"><i class="fa-solid fa-angle-down down"></i> <i class="fa-solid fa-angle-up up hidden"></i>Categorie</button>
+        <div class="filter-options categoryFilter hidden">
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="searchIcon">
+        <i class="fa-solid fa-magnifying-glass search__icone"></i>
+      </div>
+      <input type="text" id="search__input" placeholder="Cherchez un produit ">
+    </div>
+  </header>
+  <main>
+    <section class="productsList">
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
   
 </body>
 </html>

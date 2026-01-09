@@ -23,5 +23,8 @@
   "homepage": "https://github.com/Vulk1/my-ecommerce#readme",
   "devDependencies": {
     "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0"
   }
 }

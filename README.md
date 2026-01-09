@@ -1,4 +1,4 @@
-# My E-commerce Vanilla JS
+# Site E-Commerce : PixelBazaar
 
 Mini site e-commerce construit avec **HTML5, CSS3 et JavaScript (ES6+)**.  
 Il permet de lister des produits, afficher les détails dans un modal et gérer un panier persistant côté client.
@@ -90,7 +90,7 @@ Pour développer ou lancer le projet en local, vous devez avoir :
 1. Cloner le projet
 
 ```bash
-git clone https://github.com/votre-username/my-ecommerce.git
+git clone git@github.com:Vulk1/my-ecommerce.git
 cd my-ecommerce
 ```
 

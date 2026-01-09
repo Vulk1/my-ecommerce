@@ -1,0 +1,152 @@
+body {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: 'Monserra', sans-serif;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    z-index: 999;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+nav .logo {
+    width: 150px;
+    height: auto;
+}
+
+nav a {
+    color: #1a1a1a;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+
+nav a:hover, nav a:active {
+    color: #0a7e77;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e3e6f3;
+    padding: 20px;
+    
+    align-items: center;
+}
+
+header .flters {
+    justify-self: flex-start;
+    display: flex;
+}
+
+header .search {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-container{
+  position: relative;
+  display: inline-flex;
+  width: 100px;
+}
+
+.filter-btn {
+  color: #444442;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  border : 1px rgba(0, 0, 0, 0.6) solid;
+  transition: all 0.2 ease;
+}
+.filter-btn:hover {
+    color: #fff;
+    background-color: #0a7e77;
+}
+
+.filter-btn i {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 15px;
+}
+
+.filter-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 10;
+  
+}
+
+.filter-options button {
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.filter-options button:hover {
+  background-color: #0a7e77;
+  color:#fff;
+}
+
+.search {
+    display: flex;
+    height: 50px;
+    width: 500px;
+}
+
+.searchIcon {
+    background-color: #0a7e77;
+    color: #fff;
+    height: 100%;
+    width: 40px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.search input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.hidden {
+    display: none !important;
+}
+
+
+
