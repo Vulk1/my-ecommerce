@@ -4,6 +4,7 @@ export let filterButtons = document.querySelectorAll(".filter-btn");
 export const filtersContainer = document.querySelectorAll(".filter-container");
 export let filtersOptions = document.querySelectorAll(".filterOption");
 export const categoryContainer = document.querySelector(".categoryFilter");
+export const searchInput = document.querySelector("#search__input");
 
 export function displayFilterOptions(button) {
     const parent = button.closest(".filter-container");
@@ -13,6 +14,7 @@ export function displayFilterOptions(button) {
 
    
     hideOtherFilterOptions(options);
+    button.classList.toggle("active");
     options.classList.toggle("hidden");
     buttonIconUp.classList.toggle("hidden");
     buttonIconDown.classList.toggle("hidden");
@@ -22,18 +24,22 @@ function hideOtherFilterOptions(currentOptions) {
 
     filtersContainer.forEach(filterContainer => {
         let filterOptions = filterContainer.querySelector(".filter-options");
-        
+        let button = filterContainer.querySelector(".filter-btn");
+
         if(filterOptions !== currentOptions){
             filterOptions.classList.add("hidden");
+            button.classList.remove("active");
         }
     });
 }
 
 export function hideOptions(container) {
     const filterOptions = container.querySelector(".filter-options");
-        
+    let button = container.querySelector(".filter-btn");
+
     if(filterOptions){
         filterOptions.classList.add("hidden");
+        button.classList.remove("active");
     }
 }
 

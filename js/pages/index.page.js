@@ -36,6 +36,8 @@ function initHeaderEvents() {
     headerDom.filtersOptions.forEach(optionButton => {
         optionButton.addEventListener("click", productHandler.handleFilterOptionSelected);
     });
+
+    headerDom.searchInput.addEventListener("input", productHandler.handleSearchProduct);
 }
 
 init();

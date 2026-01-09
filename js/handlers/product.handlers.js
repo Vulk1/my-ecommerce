@@ -52,3 +52,15 @@ export function handleFilterOptionSelected(ev) {
             break;
     }
 }
+
+
+export function handleSearchProduct(e) {
+    const query = e.target.value.toLowerCase().trim();
+
+    console.log(query);
+    state.productToRender = state.products.filter(product =>
+    { return (product.title.toLowerCase().includes(query)) || 
+             (product.category.toLowerCase().includes(query)) }
+  );
+  renderProducts();
+}

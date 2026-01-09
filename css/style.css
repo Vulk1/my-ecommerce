@@ -87,11 +87,31 @@ header .search {
   top: 100%;
   left: 0;
   flex-direction: column;
-  border: 1px solid #ccc;
-  background-color: white;
+  border : 1px rgba(0, 0, 0, 0.6) solid;
+  border-top: none;
+  background-color: #e9e9ed;
   z-index: 10;
-  
+  width: 200px;
+
 }
+.active {
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  /*transform: translateX(-50%);*/
+  width: 100px;
+  height: 1px; /* épaisseur de la bordure */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 11;
+}
+
 
 .filter-options button {
   padding: 8px 12px;
@@ -107,6 +127,8 @@ header .search {
   background-color: #0a7e77;
   color:#fff;
 }
+
+
 
 .search {
     display: flex;
@@ -140,9 +162,6 @@ header .search {
     font-size: 15px;
     transition: all 0.3s ease;
 }
-
-
-
 
 .hidden {
     display: none !important;

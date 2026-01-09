@@ -1,6 +1,4 @@
-.productsList {
-    padding: 80px;
-}
+
 
 .productsList .product-card {
     border : 1px rgba(0, 0, 0, 0.2) solid;
@@ -45,8 +43,13 @@
 
     border-radius: 10px;
     border : 1px rgba(0, 0, 0, 0.6) solid;
-    transition: all 0.4 ease;
-    
+    transition: all 0.3 ease;
+}
+
+.productsList .product-card__seeProduct:hover {
+    color: #0a7e77;
+    background-color: #fff;
+    border: 1px #0a7e77 solid;
 }
 
 
@@ -55,9 +58,18 @@
     position: absolute;
     top: 30px;
     right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
     font-size: 27px;
     border : none;
     background-color: transparent;
     cursor: pointer;
     color : #0a7e77;
+    transition: all 0.4 ease;
+}
+
+.productsList .product-card__addToCart:hover {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
 }
